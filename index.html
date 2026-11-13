@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Nague &amp; Sendergram Suite — Bolita Cubana &amp; Lotería de Florida</title><link rel="icon" type="image/png" href="assets/nague_icon.png"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-container":"#82c5fd","surface-bright":"#faf8ff","tertiary":"#00472f","primary":"#003594","tertiary-container":"#006142","tertiary-fixed":"#9df4c9","on-secondary-fixed-variant":"#004b73","secondary":"#076396","on-tertiary-container":"#84dbb1","on-secondary":"#ffffff","inverse-primary":"#b4c5ff","on-primary-fixed-variant":"#003ea8","surface-container-low":"#f2f3ff","inverse-on-surface":"#eef0ff","on-primary":"#ffffff","primary-container":"#004ac6","on-error-container":"#93000a","surface-variant":"#dae2fc","surface-container-highest":"#dae2fc","on-error":"#ffffff","on-surface":"#131b2e","on-secondary-container":"#00517d","primary-fixed":"#dbe1ff","on-primary-container":"#b8c8ff","error-container":"#ffdad6","secondary-fixed-dim":"#93ccff","secondary-fixed":"#cce5ff","on-tertiary-fixed-variant":"#005237","on-background":"#131b2e","on-secondary-fixed":"#001d31","error":"#ba1a1a","surface":"#faf8ff","surface-tint":"#1b55d0","primary-fixed-dim":"#b4c5ff","on-primary-fixed":"#00174b","outline":"#737685","outline-variant":"#c3c6d6","surface-container-lowest":"#ffffff","on-surface-variant":"#434654","tertiary-fixed-dim":"#81d8ae","surface-container-high":"#e1e7ff","surface-dim":"#d2d9f4","on-tertiary-fixed":"#002114","background":"#faf8ff","inverse-surface":"#283044","surface-container":"#eaedff","on-tertiary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-md":"1rem","space-xs":"0.25rem","gutter":"1.5rem","margin":"2.5rem","margin-mobile":"1.25rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter-mobile":"1rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"metric-headline":["Inter"],"label-btn":["Inter"],"display-hero-mobile":["Inter"],"headline-md":["Inter"],"metric-label":["Inter"],"headline-lg":["Inter"],"display-hero":["Inter"]},"fontSize":{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"metric-headline":["44px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-btn":["15px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"metric-label":["13px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.025em","fontWeight":"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">casino</span></div><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight whitespace-nowrap">Nague &amp; Sendergram Suite</span><span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-body-sm text-body-sm font-semibold border border-outline-variant/40">Bolita Pro v2.4</span></div></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors py-2 text-primary font-semibold" data-path="inicio" href="#">Inicio</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="nague-listeros" href="#nague-pos">Nague Listeros</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="sendergram-banqueros" href="#sendergram-hub">Sendergram Banqueros</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="loteria-florida" href="#florida">Lotería de Florida</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="precios" href="#precios">Precios</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="ayuda" href="#soporte">Ayuda</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-[#0088cc] text-on-primary font-label-btn text-body-sm hover:brightness-105 active:scale-[0.98] transition-all shadow-sm" href="https://t.me" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">send</span><span>Canal Telegram</span></a><a class="hidden sm:inline-flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-[#25D366] text-on-primary font-label-btn text-body-sm hover:brightness-105 active:scale-[0.98] transition-all shadow-sm" href="https://whatsapp.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">chat</span><span>Soporte WhatsApp</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-2"><span class="material-symbols-outlined text-on-primary text-[18px]">admin_panel_settings</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Offline Parity & Verification Banner -->
+<section class="w-full bg-surface-container-high/60 border-b border-outline-variant/30 py-2.5 px-6">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-body-sm font-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-semibold text-tertiary tracking-tight">Compatible con Lotería de Florida • Tiros Mediodía (1:30 PM) y Noche (9:45 PM)</span>
+<span class="text-on-surface-variant hidden md:inline">• Cero errores de recuento</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="inline-flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[15px] text-tertiary">lock</span> Sello Criptográfico CRC-16
+        </span>
+<span class="hidden sm:inline font-mono text-[11px] bg-surface-container px-2 py-0.5 rounded text-secondary font-semibold">CHARADA CUBANA LISTA</span>
+</div>
+</div>
+</section>
+<!-- Hero Section -->
+<section class="w-full pt-12 pb-16 lg:pt-20 lg:pb-24 px-6 lg:px-12 relative overflow-hidden">
+<!-- Ambient Subtle Depth -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-40 w-[30rem] h-[30rem] rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
+<!-- Top Pill Tag -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-fixed/30 border border-tertiary/20 text-tertiary font-body-sm text-body-sm font-semibold mb-6 shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">bolt</span>
+<span>Compatible con Lotería de Florida (Día y Noche) • 100% Offline • 30 Días Gratis</span>
+</div>
+<!-- App Icon Visual Anchor -->
+<div class="w-20 h-20 rounded-2xl bg-primary-container shadow-xl flex items-center justify-center p-3 mb-6 relative group transform hover:scale-105 transition-transform duration-300">
+<svg class="w-full h-full drop-shadow" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M52 24L28 52H48L48 76L74 48H52V24Z" fill="#9df4c9"></path>
+<circle cx="72" cy="28" fill="#82c5fd" r="11"></circle>
+<text fill="#003594" font-family="Inter, sans-serif" font-size="13" font-weight="900" text-anchor="middle" x="72" y="32">48</text>
+<circle cx="30" cy="74" fill="#ffffff" r="8"></circle>
+<text fill="#003594" font-family="Inter, sans-serif" font-size="10" font-weight="900" text-anchor="middle" x="30" y="77">15</text>
+</svg>
+</div>
+<!-- Main Title -->
+<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero text-on-surface max-w-5xl tracking-tight leading-tight mb-6">
+        La Suite Definitiva para tu <span class="text-primary-container">Banca y Listeros</span> de Bolita Cubana.
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-10 text-balance">
+        Registra fijos, corridos, centenas, parlets y candados a máxima velocidad sin depender de conexión. Controla topes de riesgo en tiempo real y liquida premios en 1 segundo tras la salida de la Lotería de Florida.
+      </p>
+<!-- Primary Action Buttons Row -->
+<div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 w-full max-w-4xl mb-16">
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 px-6 h-12 rounded-lg bg-primary-container text-on-primary font-label-btn text-body-md hover:bg-primary transition-all active:scale-[0.98] shadow-md" data-download="nague" href="#nague-pos">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Descargar Nague.apk <span class="opacity-80 text-xs font-normal">(Listeros)</span></span>
+</a>
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 px-6 h-12 rounded-lg bg-secondary text-on-secondary font-label-btn text-body-md hover:bg-on-secondary-container transition-all active:scale-[0.98] shadow-md" data-download="sendergram" href="#sendergram-hub">
+<span class="material-symbols-outlined text-[20px]">system_update</span>
+<span>Descargar Sendergram.apk <span class="opacity-80 text-xs font-normal">(Banqueros)</span></span>
+</a>
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 h-12 rounded-lg bg-[#0088cc] text-on-primary font-label-btn text-body-md hover:brightness-105 transition-all shadow-sm" href="https://t.me" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Unirme al Canal de Telegram</span>
+</a>
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 h-12 rounded-lg bg-surface border border-[#25D366]/50 text-on-surface font-label-btn text-body-md hover:bg-[#25D366]/10 transition-all" href="https://whatsapp.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-[#25D366]">chat</span>
+<span>Demo por WhatsApp</span>
+</a>
+</div>
+<!-- 4 High-Impact Metric Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full text-left">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/50 shadow-sm hover:border-primary-container transition-all group">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/30 text-tertiary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[22px]">wifi_off</span>
+</div>
+<div class="font-metric-headline text-headline-md lg:text-metric-headline text-on-surface mb-1">100%</div>
+<div class="font-metric-label text-metric-label text-tertiary uppercase tracking-wider mb-2">Offline en Cuba</div>
+<p class="font-body-md text-body-sm text-on-surface-variant">Apunta sin megas ni señal móvil. Interfaz ultra-ligera y optimizada para cualquier teléfono Android, sin consumo de batería.</p>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/50 shadow-sm hover:border-primary-container transition-all group">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed/40 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div class="font-metric-headline text-headline-md lg:text-metric-headline text-on-surface mb-1">Día y Noche</div>
+<div class="font-metric-label text-metric-label text-primary uppercase tracking-wider mb-2">Florida Oficial</div>
+<p class="font-body-md text-body-sm text-on-surface-variant">Sincronización instantánea de tiros (Mediodía 1:30 PM y Noche 9:45 PM) con reglas estándar de fijos, corridos y parlets.</p>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/50 shadow-sm hover:border-primary-container transition-all group">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 text-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div class="font-metric-headline text-headline-md lg:text-metric-headline text-on-surface mb-1">0 Diff</div>
+<div class="font-metric-label text-metric-label text-secondary uppercase tracking-wider mb-2">0 Descuadres en Liquidación</div>
+<p class="font-body-md text-body-sm text-on-surface-variant">Sello criptográfico CRC-16 en cada lista enviada. Cero confusiones de números ilegibles, tachaduras ni reclamos.</p>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/50 shadow-sm hover:border-primary-container transition-all group">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[22px]">redeem</span>
+</div>
+<div class="font-metric-headline text-headline-md lg:text-metric-headline text-on-surface mb-1">30 Días</div>
+<div class="font-metric-label text-metric-label text-on-surface-variant uppercase tracking-wider mb-2">Prueba Pro Gratuita</div>
+<p class="font-body-md text-body-sm text-on-surface-variant">Prueba Pro completa para toda tu red de listeros y banca sin compromiso ni tarjetas. Activación inmediata vía WhatsApp.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Dual Engine Showcase: Nague POS vs Sendergram Hub -->
+<section class="w-full py-16 lg:py-24 bg-surface-container-low/50 border-y border-outline-variant/30 px-6 lg:px-12" id="productos">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-primary font-body-sm font-semibold uppercase tracking-wider">Suite Bolita Especializada</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mt-2 mb-4">
+          Dos aplicaciones diseñadas a la medida de la jugada cubana
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Nague POS blinda la anotación de los listeros en la calle, mientras Sendergram Hub centraliza el riesgo y los pagos de la banca con precisión matemática.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+<!-- COLUMN 1: Nague POS (Listeros) -->
+<div class="bg-surface-container-lowest rounded-2xl border-t-4 border-t-primary-container border-x border-b border-outline-variant/40 p-6 lg:p-10 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" id="nague-pos">
+<div>
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-body-sm text-body-sm font-semibold">
+                Teléfonos Android de Listeros
+              </span>
+<span class="flex items-center gap-1.5 text-tertiary font-body-sm font-semibold text-xs bg-tertiary-fixed/30 px-2.5 py-0.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span> Modo Sin Conexión
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mb-2">
+              Nague POS — Terminal para Listeros
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              La app rápida, discreta y blindada para anotar en la calle sin conexión. Diseñada para registrar cientos de jugadas en segundos con atajos inteligentes.
+            </p>
+<!-- Visual Terminal Mockup Card -->
+<div class="bg-surface-container rounded-xl p-5 mb-8 border border-outline-variant/30 relative">
+<div class="flex justify-between items-center pb-3 border-b border-outline-variant/30 text-body-sm">
+<span class="font-mono text-on-surface-variant text-xs">LISTERO: YOSVANY • LISTA #03</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed/50 text-tertiary font-mono text-[11px] font-bold">FLORIDA MEDIODÍA</span>
+</div>
+<!-- Modos de jugada pills -->
+<div class="flex flex-wrap gap-1.5 pt-3 pb-2 text-[11px] font-mono">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-bold">FIJO</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold">CORRIDO</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold">PARLET</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold">CENTENA</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold">CANDADO</span>
+</div>
+<!-- Ticket preview lines -->
+<div class="py-3 space-y-2 font-mono text-body-sm border-t border-b border-dashed border-outline-variant/60 my-2">
+<div class="flex justify-between">
+<span class="text-on-surface">Fijo: <strong>48</strong> (Cucaracha)</span>
+<span class="text-on-surface font-semibold">$200.00</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface">Corrido: <strong>15</strong> (Perro)</span>
+<span class="text-on-surface font-semibold">$50.00</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface">Parlet: <strong>48 - 15</strong></span>
+<span class="text-on-surface font-semibold">$30.00</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface">Centena: <strong>348</strong></span>
+<span class="text-on-surface font-semibold">$20.00</span>
+</div>
+<div class="pt-2 flex justify-between items-baseline border-t border-outline-variant/30">
+<span class="font-sans font-bold text-on-surface text-body-lg">TOTAL JUGADO</span>
+<span class="font-sans font-extrabold text-2xl text-primary-container">$300.00</span>
+</div>
+</div>
+<!-- Bottom Mock Buttons (Including Discreet Calculator Mode) -->
+<div class="grid grid-cols-2 gap-2 pt-2">
+<button class="py-2.5 px-3 bg-surface-container-highest text-on-surface rounded font-semibold text-body-sm hover:bg-surface-dim transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">calculate</span> Modo Discreto
+                </button>
+<button class="py-2.5 px-3 bg-primary-container text-on-primary rounded font-bold text-body-sm hover:bg-primary transition-all flex items-center justify-center gap-1.5 shadow" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span> ANOTAR JUGADA
+                </button>
+</div>
+</div>
+<!-- Features Checklist -->
+<ul class="space-y-3 font-body-md text-body-md text-on-surface mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-[20px] mt-0.5 shrink-0">check_circle</span>
+<span><strong>Teclado ultrarrápido</strong> con atajos especiales para combinaciones, corridos corridos y parlets en serie.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-[20px] mt-0.5 shrink-0">check_circle</span>
+<span><strong>Modo calculadora discreta:</strong> Oculta la app tras una calculadora funcional accesible sólo con tu PIN secreto.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-[20px] mt-0.5 shrink-0">check_circle</span>
+<span><strong>Cero consumo de datos:</strong> Genera listas comprimidas y selladas con suma criptográfica CRC-16.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-[20px] mt-0.5 shrink-0">check_circle</span>
+<span><strong>Envío directo a la banca</strong> en 1 clic por WhatsApp, Telegram o SMS antes del cierre de Florida.</span>
+</li>
+</ul>
+</div>
+<!-- Bottom Action -->
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 h-12 rounded-lg bg-primary-container text-on-primary font-label-btn text-body-md hover:bg-primary transition-all shadow-sm" href="https://whatsapp.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">android</span>
+<span>Instalar Nague POS (Listeros)</span>
+</a>
+<span class="text-body-sm text-on-surface-variant font-mono">Compatible Android 5.0+</span>
+</div>
+</div>
+<!-- COLUMN 2: Sendergram Hub (Banqueros) -->
+<div class="bg-surface-container-lowest rounded-2xl border-t-4 border-t-secondary border-x border-b border-outline-variant/40 p-6 lg:p-10 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow" id="sendergram-hub">
+<div>
+<!-- Header Tag -->
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-body-sm text-body-sm font-semibold">
+                Tablets, PCs &amp; Consolas de Banca
+              </span>
+<span class="flex items-center gap-1.5 text-secondary font-body-sm font-semibold text-xs bg-secondary-fixed-dim/30 px-2.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">shield</span> Servidor Auditor
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mb-2">
+              Sendergram Hub — Consola para Banqueros
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              Control total de riesgo, topes por número y liquidación automática de premios. Monitorea listeros y evita sobregiros antes del tiro oficial.
+            </p>
+<!-- Visual Console Mockup Card -->
+<div class="bg-surface-container rounded-xl p-5 mb-8 border border-outline-variant/30">
+<div class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
+<span class="font-mono text-on-surface-variant text-xs flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span> TIRO EN VIVO: FLORIDA MEDIODÍA • 1:30 PM
+                </span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-mono text-[11px] font-bold">CIERRA EN 14 MIN</span>
+</div>
+<!-- Metrics bar -->
+<div class="grid grid-cols-3 gap-2.5 py-3 text-center">
+<div class="bg-surface-container-lowest p-2 rounded border border-outline-variant/20">
+<div class="text-[10px] font-metric-label text-on-surface-variant uppercase">Listeros Activos</div>
+<div class="text-lg font-bold text-on-surface">12 / 12</div>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded border border-outline-variant/20">
+<div class="text-[10px] font-metric-label text-on-surface-variant uppercase">Recaudación</div>
+<div class="text-lg font-bold text-secondary">$42,500</div>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded border border-outline-variant/20">
+<div class="text-[10px] font-metric-label text-on-surface-variant uppercase">Premios Estimados</div>
+<div class="text-lg font-bold text-primary">$18,200</div>
+</div>
+</div>
+<!-- Alerta de Topes Sobregirados -->
+<div class="p-2.5 rounded-lg bg-error-container/60 border border-error/30 text-xs font-mono space-y-1 my-2">
+<div class="flex items-center justify-between font-bold text-on-error-container">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">warning</span> ALERTA DE TOPE: NÚMERO 48</span>
+<span class="text-[10px] bg-error text-on-error px-1.5 py-0.5 rounded">SOBREGIRADO</span>
+</div>
+<div class="text-on-surface-variant text-[11px] flex justify-between">
+<span>Tope fijado: $5,000 • Recibido: $5,600</span>
+<span class="font-bold text-error">Botar / Reventar: +$600</span>
+</div>
+</div>
+<!-- Mini Progress / Status visual -->
+<div class="space-y-1.5 pt-1">
+<div class="flex justify-between text-xs font-mono text-on-surface-variant">
+<span>Validación de Listas Selladas CRC-16</span>
+<span class="text-tertiary font-semibold">100% Sin Errores</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-full"></div>
+</div>
+</div>
+</div>
+<!-- Features Checklist -->
+<ul class="space-y-3 font-body-md text-body-md text-on-surface mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">check_circle</span>
+<span><strong>Importación instantánea</strong> de listas recibidas por WhatsApp con descompresión y verificación total.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">check_circle</span>
+<span><strong>Control de topes y números calientes:</strong> Alerta inmediata para botar o reventar jugadas antes del cierre.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">check_circle</span>
+<span><strong>Carga del número oficial de Florida:</strong> Cálculo automático y en 1 segundo de todos los ganadores.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">check_circle</span>
+<span><strong>Balance neto automático:</strong> Total recaudado, comisión pactada del listero y premios exactos a pagar.</span>
+</li>
+</ul>
+</div>
+<!-- Bottom Action -->
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 h-12 rounded-lg bg-secondary text-on-secondary font-label-btn text-body-md hover:bg-on-secondary-container transition-all shadow-sm" href="https://whatsapp.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">tablet_android</span>
+<span>Instalar Hub (Banca)</span>
+</a>
+<span class="text-body-sm text-on-surface-variant font-mono">Consola Android / Tablet / PC</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Florida Lottery & Charada Cubana Integration Section -->
+<section class="w-full py-16 lg:py-24 bg-surface px-6 lg:px-12 border-b border-outline-variant/30" id="florida">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-body-sm font-semibold text-xs mb-3">
+<span class="material-symbols-outlined text-[16px]">stars</span> Integración Oficial
+        </div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mb-4">
+          Lotería de Florida &amp; Charada Tradicional
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Nuestra suite procesa los tiros oficiales de Florida (Pick 3 / Pick 4) y los traduce al instante al formato tradicional cubano: Centena, Fijo, Corridos y Parlets.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+<!-- Card 1: Tiro Mediodía -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/40 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-amber-100 text-amber-900 font-mono text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">light_mode</span> TIRO MEDIODÍA
+              </span>
+<span class="text-on-surface-variant font-mono text-xs font-semibold">1:30 PM EST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Florida Pick 3 / Pick 4</h3>
+<p class="font-body-md text-body-sm text-on-surface-variant mb-4">
+              Ejemplo de tiro oficial procesado en milisegundos:
+            </p>
+<div class="bg-surface-container p-4 rounded-xl space-y-3 font-mono">
+<div class="flex justify-between items-center">
+<span class="text-xs text-on-surface-variant">Número Florida:</span>
+<span class="text-xl font-black text-primary tracking-wider">748 • 1592</span>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 text-xs space-y-1">
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">Fijo Ganador:</span>
+<span class="font-bold text-tertiary">48 (Cucaracha)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">Corridos:</span>
+<span class="font-bold text-secondary">15 y 92</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">Centena:</span>
+<span class="font-bold text-on-surface">748</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 text-[12px] text-tertiary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span> Liquidación automática de parlets (48-15, 48-92)
+          </div>
+</div>
+<!-- Card 2: Tiro Noche -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/40 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-900 font-mono text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">dark_mode</span> TIRO NOCHE
+              </span>
+<span class="text-on-surface-variant font-mono text-xs font-semibold">9:45 PM EST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Florida Evening</h3>
+<p class="font-body-md text-body-sm text-on-surface-variant mb-4">
+              Auditoría nocturna con cierre estricto y emisión de resúmenes consolidados de ganancia neta.
+            </p>
+<div class="bg-surface-container p-4 rounded-xl space-y-3 font-mono">
+<div class="flex justify-between items-center">
+<span class="text-xs text-on-surface-variant">Número Florida:</span>
+<span class="text-xl font-black text-secondary tracking-wider">312 • 4589</span>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 text-xs space-y-1">
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">Fijo Ganador:</span>
+<span class="font-bold text-tertiary">12 (Ramera)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">Corridos:</span>
+<span class="font-bold text-secondary">45 y 89</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface font-semibold">Centena:</span>
+<span class="font-bold text-on-surface">312</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 text-[12px] text-tertiary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span> Liquidación automática de parlets (12-45, 12-89)
+          </div>
+</div>
+<!-- Card 3: Charada Cubana Integrada -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/40 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed/50 text-tertiary font-mono text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">menu_book</span> CHARADA COMPLETA
+              </span>
+<span class="text-on-surface-variant font-mono text-xs font-semibold">1 al 100</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Buscador y Diccionario</h3>
+<p class="font-body-md text-body-sm text-on-surface-variant mb-4">
+              Tus listeros pueden buscar jugadas por nombre (ej. "Caballo", "Dinero", "Pescado") y la app ingresa el número de inmediato.
+            </p>
+<div class="grid grid-cols-2 gap-2 text-xs font-mono">
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<span>01: Caballo</span>
+<span class="font-bold text-primary">#01</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<span>08: Muerto</span>
+<span class="font-bold text-primary">#08</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<span>15: Perro</span>
+<span class="font-bold text-primary">#15</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<span>48: Cucaracha</span>
+<span class="font-bold text-primary">#48</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 text-[12px] text-on-surface-variant flex items-center gap-1 font-mono">
+<span class="material-symbols-outlined text-[16px] text-primary">search</span> Incluye equivalencias de la Charada China y Cubana
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Flow: 3 Visual Steps with Connectors -->
+<section class="w-full py-16 lg:py-24 px-6 lg:px-12" id="flujo">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-secondary font-body-sm font-semibold uppercase tracking-wider">Flujo sin errores</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mt-2 mb-4">
+          El flujo sin errores: Desde la calle hasta el pago de premios
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Elimina las libretas de papel, los tachones, los números dudosos y las discusiones con listeros.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center font-bold text-headline-sm">
+                1
+              </div>
+<span class="material-symbols-outlined text-primary text-[28px]">edit_note</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight mb-3">
+              1. El listero apunta en Nague POS
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              Registra fijos, corridos, centenas y parlets al instante en cualquier teléfono. Cada jugada queda sellada con fecha, hora exacta e inmutable en la memoria local.
+            </p>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg font-mono text-xs text-on-surface-variant">
+            ⚡ 0 consumo de megas • A prueba de apagones de señal
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center font-bold text-headline-sm">
+                2
+              </div>
+<span class="material-symbols-outlined text-secondary text-[28px]">forward_to_inbox</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight mb-3">
+              2. Envío de lista sellada por WhatsApp
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              Nague genera un reporte compacto e infalsificable con código CRC-16 que se envía a la banca en 1 toque antes del cierre del tiro (1:30 PM o 9:45 PM).
+            </p>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg font-mono text-xs text-on-surface-variant">
+            📦 Lista sellada matemáticamente • Imposible adulterar
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/40 shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-12 h-12 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-headline-sm">
+                3
+              </div>
+<span class="material-symbols-outlined text-tertiary text-[28px]">payments</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight mb-3">
+              3. La banca liquida en 1s con Sendergram
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              Introduce el tiro oficial de Florida (ej. 748 - 15 - 92). El sistema cruza todas las listas al instante, calcula los premios y define la comisión neta de cada listero.
+            </p>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg font-mono text-xs text-on-surface-variant">
+            🛡️ Reportes listos para liquidar y pagar sin reclamos
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing & Free Trial Section -->
+<section class="w-full py-16 lg:py-24 bg-surface-container-low/40 border-t border-outline-variant/30 px-6 lg:px-12" id="precios">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-body-sm font-semibold text-xs mb-3">
+          Prueba de 30 Días con Acceso Total
+        </div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mb-4">
+          Planes diseñados para Listeros y Banqueros
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Pruébalo durante un mes entero con tus propios listeros. Cero complicaciones, sin tarjetas bancarias y con asistencia directa por WhatsApp y Telegram.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+<!-- Plan 1: Plan Listero (Nague POS) -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 lg:p-10 border border-outline-variant/40 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="font-headline-sm text-headline-sm text-on-surface">Plan Listero (Nague POS)</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-mono text-xs font-semibold">POR DISPOSITIVO</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              La herramienta esencial para el listero independiente que necesita rapidez, discreción y total exactitud.
+            </p>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">$0</span>
+<span class="text-on-surface-variant text-body-md">primeros 30 días gratis de prueba</span>
+</div>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface mb-8 border-t border-outline-variant/30 pt-6">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span>
+<span>Anotación ilimitada 100% offline (sin megas)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span>
+<span>Fijos, corridos, centenas, parlets y candados</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span>
+<span>Modo Calculadora Discreta con PIN</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span>
+<span>Envío de lista sellada con 1 clic por WhatsApp / SMS</span>
+</li>
+</ul>
+</div>
+<div>
+<a class="w-full inline-flex items-center justify-center gap-2 px-6 h-12 rounded-lg bg-surface border border-outline-variant text-on-surface font-label-btn text-body-md hover:bg-surface-container transition-all" href="https://whatsapp.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Activar Licencia Listero (30 Días Gratis)</span>
+</a>
+<p class="text-center text-xs text-on-surface-variant mt-3 font-body-sm">Sin tarjetas • Activación en 2 minutos</p>
+</div>
+</div>
+<!-- Plan 2: Suite Banca Completa (Featured) -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 lg:p-10 border-2 border-primary-container relative flex flex-col justify-between shadow-lg">
+<div class="absolute -top-3.5 right-8 bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold px-3 py-1 rounded-full shadow-sm">
+            SUITE COMPLETA BANCA
+          </div>
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="font-headline-sm text-headline-sm text-primary-container">Sendergram Hub + Listeros</span>
+<span class="px-2.5 py-1 rounded bg-primary-fixed text-primary font-mono text-xs font-semibold">BANQUEROS</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              Para dueños de banca que manejan múltiples listeros y requieren control de topes, quiebre y liquidación inmediata.
+            </p>
+<div class="flex items-baseline gap-2 mb-8">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">$0</span>
+<span class="text-on-surface-variant text-body-md">primeros 30 días gratis con soporte</span>
+</div>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface mb-8 border-t border-outline-variant/30 pt-6">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span><strong>Consola Sendergram Hub</strong> para banqueros</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>Conexión de <strong>Listeros Ilimitados</strong></span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>Control de topes por número y alertas de botar</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>Liquidación automática de Florida Día y Noche en 1s</span>
+</li>
+</ul>
+</div>
+<div>
+<a class="w-full inline-flex items-center justify-center gap-2 px-6 h-12 rounded-lg bg-primary-container text-on-primary font-label-btn text-body-md hover:bg-primary transition-all shadow-md" href="https://whatsapp.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+<span>Solicitar Llave Banca Completa</span>
+</a>
+<p class="text-center text-xs text-on-surface-variant mt-3 font-body-sm">Activación personalizada por WhatsApp o Telegram</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Community, Support & 24/7 Telegram & WhatsApp Hub -->
+<section class="w-full py-16 lg:py-24 px-6 lg:px-12 bg-surface" id="soporte">
+<div class="max-w-7xl mx-auto">
+<div class="rounded-3xl bg-gradient-to-br from-surface-container-low via-surface-container-lowest to-surface-container p-8 lg:p-14 border border-outline-variant/40 shadow-sm relative overflow-hidden">
+<div class="max-w-3xl relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-body-sm font-semibold text-xs mb-4">
+<span class="material-symbols-outlined text-[15px]">headset_mic</span> Comunidad de Banqueros y Listeros
+          </div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mb-4">
+            Resultados de Florida al instante y soporte continuo
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 text-balance">
+            Únete a cientos de banqueros y listeros en Cuba y el exterior. Recibe las publicaciones al minuto de los tiros de Florida (Día y Noche), tips de balance de riesgo y las últimas actualizaciones del APK.
+          </p>
+<div class="flex flex-wrap items-center gap-4">
+<!-- Telegram Official Channel Button -->
+<a class="inline-flex items-center gap-3 px-6 h-13 py-3 rounded-xl bg-[#0088cc] text-on-primary font-label-btn text-body-md hover:brightness-105 transition-all shadow-md" href="https://t.me" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<div class="text-left">
+<div class="text-xs opacity-80 leading-none">Canal Oficial</div>
+<div class="font-bold leading-tight">Telegram Tiros Florida &amp; Tips</div>
+</div>
+</a>
+<!-- WhatsApp Direct Technical Bot Button -->
+<a class="inline-flex items-center gap-3 px-6 h-13 py-3 rounded-xl bg-[#25D366] text-on-primary font-label-btn text-body-md hover:brightness-105 transition-all shadow-md" href="https://whatsapp.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<div class="text-left">
+<div class="text-xs opacity-80 leading-none">Mesa de Ayuda</div>
+<div class="font-bold leading-tight">WhatsApp Soporte 24/7</div>
+</div>
+</a>
+</div>
+<!-- Live Help Topics Carousel/Pills -->
+<div class="mt-10 pt-8 border-t border-outline-variant/30">
+<div class="text-xs font-mono uppercase text-on-surface-variant mb-3 font-semibold">Consultas frecuentes de banqueros y listeros:</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface border border-outline-variant/50 text-body-sm text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('ai-query').value='¿Cómo configurar los porcentajes de comisión para listeros?'; openAssistant();">
+                💰 Configurar comisiones de listeros
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface border border-outline-variant/50 text-body-sm text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('ai-query').value='¿Cómo se liquidan los parlets con Florida?'; openAssistant();">
+                🎯 Liquidación de parlets
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface border border-outline-variant/50 text-body-sm text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('ai-query').value='¿Cómo pasar las listas por WhatsApp a la banca?'; openAssistant();">
+                📲 Enviar listas por WhatsApp
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive AI Assistant Panel (Toggled via Float button in App Shell) -->
+<div class="fixed inset-y-0 right-0 z-50 w-full sm:w-96 bg-surface shadow-2xl border-l border-outline-variant/40 transform translate-x-full transition-transform duration-300 flex flex-col justify-between" id="ai-assistant-modal">
+<!-- Header -->
+<div class="p-4 bg-primary-container text-on-primary flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+<div>
+<h4 class="font-headline-sm text-body-md font-bold">Asistente Nague Suite Bolita</h4>
+<span class="text-[11px] opacity-80">Respuestas para banqueros y listeros</span>
+</div>
+</div>
+<button class="p-1 rounded-full hover:bg-on-primary/10 transition-colors" onclick="closeAssistant()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Chat Message List -->
+<div class="flex-1 p-4 overflow-y-auto space-y-3 font-body-sm text-body-sm bg-surface-container-low/40" id="chat-messages">
+<div class="bg-surface p-3 rounded-xl border border-outline-variant/30 text-on-surface shadow-sm">
+        👋 ¡Hola! Soy el asistente de la suite <strong>Nague POS &amp; Sendergram</strong>. Pregúntame sobre cómo anotar sin megas, configurar topes de números calientes o liquidar tiros de Florida.
+      </div>
+</div>
+<!-- Chat Input Area -->
+<div class="p-3 bg-surface border-t border-outline-variant/30">
+<form class="flex gap-2" id="chat-form" onsubmit="handleChatSubmit(event)">
+<input class="flex-1 px-3 py-2 text-body-sm bg-surface-container-lowest border border-outline-variant rounded-lg text-on-surface focus:border-primary-container focus:outline-none" id="ai-query" placeholder="Escribe tu consulta aquí..." type="text"/>
+<button class="px-3.5 py-2 bg-primary-container text-on-primary rounded-lg font-bold hover:bg-primary transition-all flex items-center justify-center" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    function openAssistant() {
+      const modal = document.getElementById('ai-assistant-modal');
+      if (modal) modal.classList.remove('translate-x-full');
+    }
+
+    function closeAssistant() {
+      const modal = document.getElementById('ai-assistant-modal');
+      if (modal) modal.classList.add('translate-x-full');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const shellAiBtn = document.querySelector('button[aria-label="Asistente Virtual IA"]');
+      if (shellAiBtn) {
+        shellAiBtn.addEventListener('click', openAssistant);
+      }
+    });
+
+    function handleChatSubmit(e) {
+      if (window.handleChatSubmit && window.handleChatSubmit !== handleChatSubmit) {
+        return window.handleChatSubmit(e);
+      }
+      e.preventDefault();
+    }
+  </script>
+  <script src="js/site-config.js"></script>
+</div></main><div class="fixed bottom-6 right-6 z-40 group flex items-center"><div class="pointer-events-none absolute right-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity bg-inverse-surface text-inverse-on-surface font-body-sm text-body-sm px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg">Asistente Virtual IA</div><button aria-label="Asistente Virtual IA" class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg hover:bg-primary transition-all active:scale-95" type="button"><span class="material-symbols-outlined text-[28px]">smart_toy</span></button></div><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 py-space-xl mt-space-xl"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">casino</span><span class="font-headline-sm text-headline-sm text-on-surface">Nague &amp; Sendergram Suite</span></div><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">Solución tecnológica integral para Banqueros y Listeros de Bolita y Lotería de Florida.</p></div><div class="flex flex-wrap justify-center items-center gap-space-md"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="charada" href="#florida">Charada Cubana</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="guias-listeros" href="ayuda.html">Guía y Ayuda</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" data-path="seguridad-crc" href="#florida"><span class="material-symbols-outlined text-[15px] text-tertiary">shield</span>Sello CRC-16</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="politica" href="privacidad.html">Privacidad</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contacto" href="#soporte">Contacto Directo</a></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 mt-space-lg pt-space-md border-t border-outline-variant/20 flex flex-col sm:flex-row justify-between items-center text-on-surface-variant font-body-sm text-body-sm gap-2"><p>© 2025 Nague &amp; Sendergram Suite. Desarrollado para el control exacto de jugadas y tiros de Florida.</p><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span>Tiros Florida: Mediodía 1:30 PM • Noche 9:45 PM</span></div></div></footer></body></html>
