@@ -4,7 +4,7 @@ window.SUITE_CONFIG = {
   supabaseAnonKey:
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV0cnNkdmhicWVua2J4c3Rnd3ZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1MTQ5MTQsImV4cCI6MjA3NzA5MDkxNH0.1ZtMFGsBeMRpQXOij7J3F1alqUn0tXir7ubN9u0nxRg",
   defaultAdminWhatsapp: "5350774223",
-  telegramChannelUrl: "https://t.me/LuksGH",
+  telegramChannelUrl: "https://t.me/nague_sendergram",
   nagueApkUrl:
     "https://github.com/thementor94/nague-sendergram-web/releases/latest/download/Nague.apk",
   sendergramApkUrl:
