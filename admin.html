@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Panel Admin — Nague &amp; Sendergram Suite</title><link rel="icon" type="image/png" href="assets/nague_icon.png"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..600,0..1,0&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,sans-serif;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary":"#006398","primary-fixed":"#dbe1ff","surface-variant":"#dae2fd","on-background":"#131b2e","on-tertiary-fixed":"#002109","primary":"#004ac6","primary-container":"#2563eb","tertiary-fixed":"#7ffc97","surface-tint":"#0053db","surface-container-high":"#e2e7ff","inverse-on-surface":"#eef0ff","on-tertiary-container":"#c7ffca","on-secondary-fixed":"#001d31","on-surface-variant":"#434655","tertiary":"#006329","outline-variant":"#c3c6d7","on-error":"#ffffff","on-primary":"#ffffff","on-secondary-container":"#00476e","inverse-primary":"#b4c5ff","surface-container-highest":"#dae2fd","secondary-container":"#5bb8fe","on-primary-fixed":"#00174b","surface-container":"#eaedff","on-tertiary-fixed-variant":"#005320","secondary-fixed-dim":"#93ccff","on-secondary":"#ffffff","primary-fixed-dim":"#b4c5ff","inverse-surface":"#283044","secondary-fixed":"#cce5ff","tertiary-container":"#007f36","on-tertiary":"#ffffff","surface-container-low":"#f2f3ff","tertiary-fixed-dim":"#62df7d","on-primary-container":"#eeefff","on-secondary-fixed-variant":"#004b73","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#003ea8","error-container":"#ffdad6","error":"#ba1a1a","outline":"#737686","surface-dim":"#d2d9f4","on-error-container":"#93000a","background":"#faf8ff","on-surface":"#131b2e","surface":"#faf8ff","surface-bright":"#faf8ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-sm":"1rem","gutter":"1.5rem","space-sm":"0.5rem","margin-sm":"1rem","margin":"2rem"},"fontFamily":{"sans":["Inter","system-ui","sans-serif"],"title-sm":["Inter","sans-serif"],"display-hero":["Inter","sans-serif"],"title-md":["Inter","sans-serif"],"data-mono":["Inter","sans-serif"],"body-lg":["Inter","sans-serif"],"headline-lg-mobile":["Inter","sans-serif"],"headline-lg":["Inter","sans-serif"],"label-md":["Inter","sans-serif"],"body-sm":["Inter","sans-serif"],"headline-sm":["Inter","sans-serif"],"body-md":["Inter","sans-serif"],"label-sm":["Inter","sans-serif"],"display-hero-mobile":["Inter","sans-serif"],"headline-md":["Inter","sans-serif"]},"fontSize":{"title-sm":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.025em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"data-mono":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-sans text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="Nague &amp; Sendergram Suite" class="h-8 w-8 rounded-lg object-cover border border-outline-variant/30" src="assets/nague_icon.png"/><div class="flex flex-col"><span class="font-title-sm text-title-sm text-on-surface leading-tight">Admin Console</span><span class="font-label-sm text-label-sm text-outline leading-tight">Cluster Risk Engine</span></div></div><div class="px-space-lg mb-space-sm"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Operaciones Principales</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="panel-admin" href="admin.html"><span class="material-symbols-outlined mr-space-sm text-[20px]">monitoring</span><span class="font-title-sm text-title-sm">Panel Admin</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="nage-pos" href="index.html#nague-pos"><span class="material-symbols-outlined mr-space-sm text-[20px]">point_of_sale</span><span class="font-title-sm text-title-sm">Terminales Nague POS</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sendergram-hub" href="index.html#sendergram-hub"><span class="material-symbols-outlined mr-space-sm text-[20px]">account_balance</span><span class="font-title-sm text-title-sm">Sendergram Hub</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tutoriales" href="ayuda.html"><span class="material-symbols-outlined mr-space-sm text-[20px]">menu_book</span><span class="font-title-sm text-title-sm">Tutoriales &amp; Ayuda</span></a></nav><div class="px-space-md pt-space-md flex flex-col gap-space-xs"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="inicio" href="index.html"><span class="material-symbols-outlined mr-space-sm text-[20px]">arrow_back</span><span class="font-title-sm text-title-sm">Volver al Portal</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-tertiary bg-tertiary-fixed/30 px-space-sm py-space-xs rounded-full font-semibold flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Nodo En Línea</span><span class="font-data-mono text-data-mono text-outline">Sync: 12ms • SHA-256 Valid</span></div><div class="flex items-center gap-space-md"><a class="hidden md:inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container text-secondary hover:bg-surface-container-high transition-colors" href="https://t.me/LuksGH" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[18px]">send</span><span class="font-title-sm text-title-sm text-secondary">Alertas Telegram</span></a><a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-[#25D366] text-white hover:bg-[#20ba59] transition-colors" href="https://wa.me/5350774223?text=Hola%2C%20deseo%20adquirir%20una%20licencia%20para%20la%20Suite" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="font-title-sm text-title-sm text-white">Soporte WhatsApp</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1440px] mx-auto w-full flex flex-col gap-space-lg">
+<!-- Top Security & Status Ribbon -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-tertiary-fixed/30 text-tertiary font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span>Sesión de Super-Administrador Autenticada</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold tracking-wide">ROL: r0ku / Master Admin</span>
+<span class="font-data-mono text-data-mono text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+            SSL TLS 1.3 Valid • Último acceso: Hoy 14:38:12 UTC
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end lg:self-auto">
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors font-title-sm text-title-sm flex items-center gap-1.5" href="index.html">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span>Volver a la Web Pública</span>
+</a>
+<button class="px-space-md py-2 rounded-lg bg-error-container text-on-error-container hover:bg-error/20 transition-colors font-title-sm text-title-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Cerrar Sesión Segura</span>
+</button>
+</div>
+</div>
+<!-- Editorial Header Block -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Consola Maestra de Regulación</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-data-mono text-data-mono text-outline">v4.8.2-PROD</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Panel Maestro de Administración de la Web &amp; Licencias</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+          Control en tiempo real de precios de planes, promociones activas, llaves maestras y métricas de conversión comercial para la red Nage POS y Sendergram Hub.
+        </p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="w-3 h-3 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Pipeline Sync Activo: 100% Sincronizado</span>
+</div>
+</div>
+<!-- KPI Metric Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold uppercase tracking-wider">Tráfico Web Global</span>
+<span class="font-title-sm text-title-sm text-on-surface">Visitas Hoy</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed/50 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">query_stats</span>
+</div>
+</div>
+<div class="my-space-md flex items-baseline gap-3">
+<span class="font-display-hero text-display-hero text-on-surface font-bold tracking-tight">340</span>
+<span class="inline-flex items-center text-tertiary font-title-sm text-title-sm font-semibold bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+            +18.4%
+          </span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>vs. 287 ayer</span>
+<span class="font-data-mono text-data-mono">Pico: 13:00 EST</span>
+</div>
+<!-- Inline Sparkline -->
+<svg class="w-full h-9 text-primary overflow-visible" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0 20 Q 15 18, 25 14 T 45 12 T 65 17 T 80 7 T 100 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 20 Q 15 18, 25 14 T 45 12 T 65 17 T 80 7 T 100 4 L 100 24 L 0 24 Z" fill="currentColor" opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold uppercase tracking-wider">Embudo de Aplicación</span>
+<span class="font-title-sm text-title-sm text-on-surface">Clics a Descarga APK</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/40 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">download_for_offline</span>
+</div>
+</div>
+<div class="my-space-md flex items-baseline gap-3">
+<span class="font-display-hero text-display-hero text-on-surface font-bold tracking-tight">84</span>
+<span class="inline-flex items-center text-primary font-title-sm text-title-sm font-semibold bg-primary-fixed/40 px-2 py-0.5 rounded-full">
+            24.7% Conv.
+          </span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-tertiary h-2 rounded-full transition-all duration-500" style="width: 24.7%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span>Terminal POS v3.11</span>
+<span class="font-data-mono text-data-mono">SHA-256 Validado</span>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold uppercase tracking-wider">Pipeline de Conversión</span>
+<span class="font-title-sm text-title-sm text-on-surface">Clics a WhatsApp Ventas</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-[#25D366]/20 text-[#128C7E] flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">forum</span>
+</div>
+</div>
+<div class="my-space-md flex items-baseline gap-3">
+<span class="font-display-hero text-display-hero text-on-surface font-bold tracking-tight">29</span>
+<span class="inline-flex items-center text-tertiary font-title-sm text-title-sm font-semibold bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">
+            $435 Potencial
+          </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-2">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#25D366]"></span>
+            29 chats abiertos hoy
+          </span>
+<span class="font-data-mono text-data-mono text-secondary font-semibold">8.5% Total Visitantes</span>
+</div>
+</div>
+</div>
+<!-- Main Content Grid: License Matrix & Controls -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-space-lg items-start">
+<!-- Left 2 Cols: Live Price Modifier Matrix -->
+<div class="xl:col-span-2 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Matriz de Licencias Comerciales Activas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Modificación directa de precios base, descuentos dinámicos y disponibilidad de planes.</p>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm hover:bg-primary transition-all flex items-center gap-2 shrink-0 self-start sm:self-auto shadow-sm" id="save-all-btn">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Guardar Todos los Cambios</span>
+</button>
+</div>
+<!-- Alert Notification banner (dynamic feedback) -->
+<div class="hidden px-space-md py-2.5 rounded-lg bg-tertiary-fixed/40 text-on-tertiary-fixed font-title-sm text-title-sm flex items-center justify-between transition-all" id="save-banner">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary">check_circle</span>
+<span>Todas las actualizaciones de precios han sido sincronizadas en el CDN global.</span>
+</div>
+<button class="text-on-tertiary-fixed-variant hover:text-on-tertiary-fixed" onclick="document.getElementById('save-banner').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant">
+<th class="py-3 px-space-md rounded-l-lg font-label-sm text-label-sm uppercase tracking-wider">Producto &amp; Nivel</th>
+<th class="py-3 px-space-sm font-label-sm text-label-sm uppercase tracking-wider">Duración</th>
+<th class="py-3 px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-right">Precio Base ($)</th>
+<th class="py-3 px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-center">Desc. (%)</th>
+<th class="py-3 px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-right">Precio Final</th>
+<th class="py-3 px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-center">Estado</th>
+<th class="py-3 px-space-md rounded-r-lg font-label-sm text-label-sm uppercase tracking-wider text-right">Acción</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="matrix-tbody">
+<!-- Row 1: Listero Básico -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-plan="listero-1">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed/40 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Plan Listero Básico</span>
+<span class="font-label-sm text-label-sm text-outline">Terminal Nage POS</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">1 Mes</span>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<span class="font-data-mono text-data-mono text-outline">$</span>
+<input class="base-price-input w-20 py-1 px-2 rounded-lg bg-surface-container-lowest text-right font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" step="0.5" type="number" value="15.00"/>
+</div>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<input class="discount-input w-16 py-1 px-2 rounded-lg bg-surface-container-lowest text-center font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" max="100" min="0" type="number" value="0"/>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="final-price font-data-mono text-title-sm text-on-surface font-bold">$15.00</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="status-toggle px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-md text-label-md font-semibold inline-flex items-center gap-1 hover:opacity-90" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="status-text">Activo</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="row-sync-btn px-2.5 py-1 rounded-lg bg-surface-container text-primary hover:bg-primary-fixed hover:text-on-primary-fixed font-title-sm text-title-sm transition-colors" type="button">
+                      Actualizar
+                    </button>
+</td>
+</tr>
+<!-- Row 2: Listero Trimestral -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-plan="listero-3">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed/40 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Plan Listero Trimestral</span>
+<span class="font-label-sm text-label-sm text-outline">Terminal Nage POS</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">3 Meses</span>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<span class="font-data-mono text-data-mono text-outline">$</span>
+<input class="base-price-input w-20 py-1 px-2 rounded-lg bg-surface-container-lowest text-right font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" step="0.5" type="number" value="45.00"/>
+</div>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<input class="discount-input w-16 py-1 px-2 rounded-lg bg-surface-container-lowest text-center font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" max="100" min="0" type="number" value="15"/>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="final-price font-data-mono text-title-sm text-primary font-bold">$38.25</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="status-toggle px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-md text-label-md font-semibold inline-flex items-center gap-1 hover:opacity-90" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="status-text">Activo</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="row-sync-btn px-2.5 py-1 rounded-lg bg-surface-container text-primary hover:bg-primary-fixed hover:text-on-primary-fixed font-title-sm text-title-sm transition-colors" type="button">
+                      Actualizar
+                    </button>
+</td>
+</tr>
+<!-- Row 3: Banquero Pro -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-plan="banquero-1">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Plan Banquero Pro</span>
+<span class="font-label-sm text-label-sm text-outline">Sendergram Hub</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">1 Mes</span>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<span class="font-data-mono text-data-mono text-outline">$</span>
+<input class="base-price-input w-20 py-1 px-2 rounded-lg bg-surface-container-lowest text-right font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" step="0.5" type="number" value="45.00"/>
+</div>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<input class="discount-input w-16 py-1 px-2 rounded-lg bg-surface-container-lowest text-center font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" max="100" min="0" type="number" value="0"/>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="final-price font-data-mono text-title-sm text-on-surface font-bold">$45.00</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="status-toggle px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-md text-label-md font-semibold inline-flex items-center gap-1 hover:opacity-90" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="status-text">Activo</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="row-sync-btn px-2.5 py-1 rounded-lg bg-surface-container text-primary hover:bg-primary-fixed hover:text-on-primary-fixed font-title-sm text-title-sm transition-colors" type="button">
+                      Actualizar
+                    </button>
+</td>
+</tr>
+<!-- Row 4: Banquero Anual VIP -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-plan="banquero-vip">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Plan Banquero Anual VIP</span>
+<span class="font-label-sm text-label-sm text-outline">Hub + Soporte VIP 24/7</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Anual</span>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<span class="font-data-mono text-data-mono text-outline">$</span>
+<input class="base-price-input w-20 py-1 px-2 rounded-lg bg-surface-container-lowest text-right font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" step="1.0" type="number" value="540.00"/>
+</div>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<input class="discount-input w-16 py-1 px-2 rounded-lg bg-surface-container-lowest text-center font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" max="100" min="0" type="number" value="25"/>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="final-price font-data-mono text-title-sm text-primary font-bold">$405.00</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="status-toggle px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-md text-label-md font-semibold inline-flex items-center gap-1 hover:opacity-90" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="status-text">Activo</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="row-sync-btn px-2.5 py-1 rounded-lg bg-surface-container text-primary hover:bg-primary-fixed hover:text-on-primary-fixed font-title-sm text-title-sm transition-colors" type="button">
+                      Actualizar
+                    </button>
+</td>
+</tr>
+<!-- Row 5: Paquete Red Completa -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-plan="combo-network">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Paquete Red Completa</span>
+<span class="font-label-sm text-label-sm text-outline">Hub + 10 Listeros POS</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<span class="font-data-mono text-data-mono px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Mensual</span>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<span class="font-data-mono text-data-mono text-outline">$</span>
+<input class="base-price-input w-20 py-1 px-2 rounded-lg bg-surface-container-lowest text-right font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" step="1.0" type="number" value="150.00"/>
+</div>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<input class="discount-input w-16 py-1 px-2 rounded-lg bg-surface-container-lowest text-center font-data-mono text-data-mono text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" max="100" min="0" type="number" value="20"/>
+</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="final-price font-data-mono text-title-sm text-primary font-bold">$120.00</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="status-toggle px-2.5 py-1 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-md text-label-md font-semibold inline-flex items-center gap-1 hover:opacity-90" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="status-text">Activo</span>
+</button>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="row-sync-btn px-2.5 py-1 rounded-lg bg-surface-container text-primary hover:bg-primary-fixed hover:text-on-primary-fixed font-title-sm text-title-sm transition-colors" type="button">
+                      Actualizar
+                    </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">cloud_done</span>
+              Cálculo reactivo activado: los cambios se reflejan en tiempo real.
+            </span>
+<span class="font-data-mono text-data-mono">Moneda Base: USD ($)</span>
+</div>
+</div>
+<!-- Global Promotion Banner Settings -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">campaign</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Configuración del Banner Promocional Global</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cintillo superior desplegado en la cabecera de la Landing Page pública.</p>
+</div>
+</div>
+<!-- Master Toggle -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="banner-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-tertiary"></div>
+<span class="ml-2.5 font-title-sm text-title-sm text-on-surface hidden sm:inline">Cintillo Activo</span>
+</label>
+</div>
+<div class="flex flex-col gap-space-sm pt-2">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold" for="promo-text-input">Texto de la Promoción Visible</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="promo-text-input" type="text" value="🔥 ¡Oferta Especial de Lanzamiento! 20% de descuento en licencias anuales de Sendergram Hub usando el código R0KU20 por WhatsApp"/>
+</div>
+<!-- Color Pill Selectors -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Color Temático del Banner</span>
+<div class="flex items-center gap-space-sm flex-wrap" id="banner-color-pills">
+<button class="color-pill px-space-md py-1.5 rounded-full font-title-sm text-title-sm bg-primary text-on-primary shadow-sm flex items-center gap-2 ring-2 ring-primary ring-offset-2" data-color="blue" type="button">
+<span class="w-3 h-3 rounded-full bg-white"></span>
+<span>Azul Royal (Primario)</span>
+</button>
+<button class="color-pill px-space-md py-1.5 rounded-full font-title-sm text-title-sm bg-tertiary text-on-tertiary hover:opacity-90 shadow-sm flex items-center gap-2" data-color="green" type="button">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed"></span>
+<span>Verde Éxito (Nage)</span>
+</button>
+<button class="color-pill px-space-md py-1.5 rounded-full font-title-sm text-title-sm bg-[#b45309] text-white hover:opacity-90 shadow-sm flex items-center gap-2" data-color="amber" type="button">
+<span class="w-3 h-3 rounded-full bg-[#fde68a]"></span>
+<span>Ámbar Oferta (Flash)</span>
+</button>
+</div>
+</div>
+<!-- Live Banner Preview Box -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+              Vista Previa en Vivo (Render en Cabecera)
+            </span>
+<div class="w-full p-3.5 rounded-lg bg-primary text-on-primary flex items-center justify-between shadow-sm transition-all" id="banner-preview">
+<div class="flex items-center gap-2.5 overflow-hidden">
+<span class="material-symbols-outlined text-[20px] shrink-0">local_fire_department</span>
+<span class="font-title-sm text-title-sm truncate" id="banner-preview-text">🔥 ¡Oferta Especial de Lanzamiento! 20% de descuento en licencias anuales de Sendergram Hub usando el código R0KU20 por WhatsApp</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider px-2 py-0.5 rounded bg-white/20 shrink-0 font-bold ml-2">EN VIVO</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 1 Col: Quick License Generator & Server Node Inspector -->
+<div class="flex flex-col gap-space-md">
+<!-- MasterKey Device ID Generator Widget -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/40 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">key</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Generador de Llave MasterKey</h3>
+<span class="font-label-sm text-label-sm text-outline">Emisión Inmediata de Licencia</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed/30 text-tertiary font-label-sm text-label-sm font-bold">r0ku ENGINE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Genera un hash criptográfico validado con el Device ID de la terminal Android para desbloquear licencias sin conexión al servidor central.
+          </p>
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold" for="device-id-input">
+              Hardware Device ID del Cliente (Android)
+            </label>
+<div class="relative">
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-data-mono text-data-mono uppercase shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="device-id-input" placeholder="XX:XX:XX:XX:XX:XX" type="text" value="B8:27:EB:49:12:F0"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-outline text-[20px]">fingerprint</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold" for="plan-select">
+              Selector de Plan a Autorizar
+            </label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-title-sm text-title-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="plan-select">
+<option value="LISTERO_30D">Nage Listero - 30 Días (Full Operativo)</option>
+<option value="LISTERO_90D">Nage Listero - 90 Días (Trimestral)</option>
+<option value="BANQUERO_30D">Sendergram Hub Banquero - 30 Días</option>
+<option value="BANQUERO_365D">Sendergram Hub VIP - 365 Días (Anual)</option>
+<option value="SUITE_COMBO_30D">Combo Completo Red (Hub + 10 Listeros)</option>
+</select>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-tertiary text-on-tertiary hover:opacity-95 font-title-sm text-title-sm flex items-center justify-center gap-2 shadow-sm transition-all" id="generate-hash-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">vpn_key</span>
+<span>Generar Hash de Activación</span>
+</button>
+<!-- Generated Key Output Display -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Llave Hash Generada (SHA-256 Slice)</span>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  FIRMA AUTORIZADA
+                </span>
+<span class="font-data-mono text-data-mono text-outline">Válido: 30 Días</span>
+</div>
+<div class="font-data-mono text-title-sm text-on-surface font-bold break-all tracking-wide select-all bg-surface-container-lowest p-2 rounded" id="hash-output">
+                NGSK-B827-EB49-12F0-7C9A-2025
+              </div>
+</div>
+<!-- Action buttons for the key -->
+<div class="grid grid-cols-2 gap-space-xs mt-1">
+<button class="py-2 px-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-title-sm text-title-sm flex items-center justify-center gap-1.5 transition-colors" id="copy-key-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span id="copy-btn-text">Copiar Hash</span>
+</button>
+<a class="py-2 px-space-sm rounded-lg bg-[#25D366] text-white hover:bg-[#20ba59] font-title-sm text-title-sm flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/5350774223?text=Hola%2C%20deseo%20adquirir%20una%20licencia%20para%20la%20Suite/?text=Hola%2C%20tu%20llave%20de%20activaci%C3%B3n%20para%20Nage%20POS%20es%3A%20NGSK-B827-EB49-12F0-7C9A-2025" id="send-whatsapp-btn" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Master Telemetry & Ledger Status Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline font-semibold">Integridad de Nodos</span>
+<span class="font-data-mono text-data-mono text-tertiary font-bold">100% OPERACIONAL</span>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface">Base de Datos Licencias</span>
+<span class="font-data-mono text-data-mono text-outline">PostgreSQL 16 (0.8ms)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface">Redis Cache Clúster</span>
+<span class="font-data-mono text-data-mono text-outline">Hit Rate 98.4%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface">Telegram Notification Bot</span>
+<span class="font-data-mono text-data-mono text-tertiary">Conectado (@NageRiskBot)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface">Master Token Auth</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">r0ku-RSA-4096</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">sync</span>
+<span class="font-body-sm text-body-sm text-on-surface">Auto-Backup Nocturno</span>
+</div>
+<span class="font-data-mono text-data-mono text-outline">03:00 UTC</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Price Modifier Dynamic Calculation
+  function updateRowCalculation(row) {
+    const baseInput = row.querySelector('.base-price-input');
+    const discountInput = row.querySelector('.discount-input');
+    const finalPriceSpan = row.querySelector('.final-price');
+
+    const base = parseFloat(baseInput.value) || 0;
+    const discount = parseFloat(discountInput.value) || 0;
+
+    const discountedPrice = base * (1 - (discount / 100));
+    finalPriceSpan.textContent = '$' + discountedPrice.toFixed(2);
+  }
+
+  document.querySelectorAll('#matrix-tbody tr').forEach(row => {
+    const baseInput = row.querySelector('.base-price-input');
+    const discountInput = row.querySelector('.discount-input');
+    const updateBtn = row.querySelector('.row-sync-btn');
+    const statusToggle = row.querySelector('.status-toggle');
+
+    baseInput.addEventListener('input', () => updateRowCalculation(row));
+    discountInput.addEventListener('input', () => updateRowCalculation(row));
+
+    updateBtn.addEventListener('click', () => {
+      const origText = updateBtn.textContent;
+      updateBtn.textContent = '¡Guardado!';
+      updateBtn.classList.remove('bg-surface-container', 'text-primary');
+      updateBtn.classList.add('bg-tertiary-fixed', 'text-on-tertiary-fixed');
+      setTimeout(() => {
+        updateBtn.textContent = origText;
+        updateBtn.classList.remove('bg-tertiary-fixed', 'text-on-tertiary-fixed');
+        updateBtn.classList.add('bg-surface-container', 'text-primary');
+      }, 1500);
+    });
+
+    statusToggle.addEventListener('click', () => {
+      const statusText = statusToggle.querySelector('.status-text');
+      const dot = statusToggle.querySelector('span:first-child');
+      if (statusText.textContent === 'Activo') {
+        statusText.textContent = 'En Pausa';
+        statusToggle.classList.remove('bg-tertiary-fixed/40', 'text-tertiary');
+        statusToggle.classList.add('bg-surface-container', 'text-outline');
+        dot.classList.remove('bg-tertiary');
+        dot.classList.add('bg-outline');
+      } else {
+        statusText.textContent = 'Activo';
+        statusToggle.classList.remove('bg-surface-container', 'text-outline');
+        statusToggle.classList.add('bg-tertiary-fixed/40', 'text-tertiary');
+        dot.classList.remove('bg-outline');
+        dot.classList.add('bg-tertiary');
+      }
+    });
+  });
+
+  // Global Save button trigger
+  const saveAllBtn = document.getElementById('save-all-btn');
+  const saveBanner = document.getElementById('save-banner');
+  saveAllBtn.addEventListener('click', () => {
+    saveBanner.classList.remove('hidden');
+    saveAllBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>¡Cambios Guardados!</span>';
+    setTimeout(() => {
+      saveAllBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">save</span><span>Guardar Todos los Cambios</span>';
+    }, 2500);
+  });
+
+  // Promotional Banner Live Preview Synchronization
+  const bannerToggle = document.getElementById('banner-toggle');
+  const promoTextInput = document.getElementById('promo-text-input');
+  const bannerPreview = document.getElementById('banner-preview');
+  const bannerPreviewText = document.getElementById('banner-preview-text');
+  const colorPills = document.querySelectorAll('.color-pill');
+
+  promoTextInput.addEventListener('input', (e) => {
+    bannerPreviewText.textContent = e.target.value || 'Texto de anuncio promocional...';
+  });
+
+  bannerToggle.addEventListener('change', (e) => {
+    if (e.target.checked) {
+      bannerPreview.classList.remove('opacity-40');
+      bannerPreview.querySelector('span:last-child').textContent = 'EN VIVO';
+      bannerPreview.querySelector('span:last-child').className = 'font-label-sm text-label-sm uppercase tracking-wider px-2 py-0.5 rounded bg-white/20 shrink-0 font-bold ml-2';
+    } else {
+      bannerPreview.classList.add('opacity-40');
+      bannerPreview.querySelector('span:last-child').textContent = 'DESACTIVADO';
+      bannerPreview.querySelector('span:last-child').className = 'font-label-sm text-label-sm uppercase tracking-wider px-2 py-0.5 rounded bg-error-container text-on-error-container shrink-0 font-bold ml-2';
+    }
+  });
+
+  colorPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      colorPills.forEach(p => p.classList.remove('ring-2', 'ring-primary', 'ring-offset-2', 'ring-tertiary', 'ring-[#b45309]'));
+      const color = pill.getAttribute('data-color');
+      
+      bannerPreview.classList.remove('bg-primary', 'bg-tertiary', 'bg-[#b45309]', 'text-on-primary', 'text-on-tertiary', 'text-white');
+      if (color === 'blue') {
+        bannerPreview.classList.add('bg-primary', 'text-on-primary');
+        pill.classList.add('ring-2', 'ring-primary', 'ring-offset-2');
+      } else if (color === 'green') {
+        bannerPreview.classList.add('bg-tertiary', 'text-on-tertiary');
+        pill.classList.add('ring-2', 'ring-tertiary', 'ring-offset-2');
+      } else if (color === 'amber') {
+        bannerPreview.classList.add('bg-[#b45309]', 'text-white');
+        pill.classList.add('ring-2', 'ring-[#b45309]', 'ring-offset-2');
+      }
+    });
+  });
+
+  // MasterKey Generator Logic
+  const genHashBtn = document.getElementById('generate-hash-btn');
+  const deviceInput = document.getElementById('device-id-input');
+  const hashOutput = document.getElementById('hash-output');
+  const copyKeyBtn = document.getElementById('copy-key-btn');
+  const copyBtnText = document.getElementById('copy-btn-text');
+  const sendWhatsAppBtn = document.getElementById('send-whatsapp-btn');
+  const planSelect = document.getElementById('plan-select');
+
+  function generateRandomHex(length) {
+    const chars = '0123456789ABCDEF';
+    let result = '';
+    for (let i = 0; i < length; i++) {
+      result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
+  }
+
+  genHashBtn.addEventListener('click', () => {
+    const rawDev = deviceInput.value.replace(/[^A-Za-z0-9]/g, '').toUpperCase() || 'B827EB49';
+    const prefix = planSelect.value.startsWith('LISTERO') ? 'NGSK' : 'SGMB';
+    const cleanMid = rawDev.substring(0, 8).padEnd(8, 'X');
+    const mid1 = cleanMid.substring(0, 4);
+    const mid2 = cleanMid.substring(4, 8);
+    const randPart = generateRandomHex(4);
+    const newHash = `${prefix}-${mid1}-${mid2}-${randPart}-2025`;
+
+    hashOutput.textContent = newHash;
+
+    const encodedMsg = encodeURIComponent(`Hola, tu llave maestra generada para ${planSelect.options[planSelect.selectedIndex].text} en el dispositivo ${deviceInput.value} es: ${newHash}`);
+    sendWhatsAppBtn.href = `https://wa.me/5350774223?text=Hola%2C%20deseo%20adquirir%20una%20licencia%20para%20la%20Suite/?text=${encodedMsg}`;
+  });
+
+  copyKeyBtn.addEventListener('click', () => {
+    const textToCopy = hashOutput.textContent.trim();
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      copyBtnText.textContent = '¡Copiado!';
+      setTimeout(() => {
+        copyBtnText.textContent = 'Copiar Hash';
+      }, 1500);
+    });
+  });
+</script></main></div></body></html>
